@@ -39,8 +39,9 @@ registerRoute(
 
     if (url.pathname.match(fileExtensionRegexp)) {
       return false;
-    } // Return true to signal that we want to use the handler.
+    }
 
+    // Return true to signal that we want to use the handler.
     return true;
   },
   createHandlerBoundToURL(process.env.PUBLIC_URL + '/index.html')
